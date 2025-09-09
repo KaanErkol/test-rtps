@@ -7,5 +7,5 @@ services:
       - "9090:8081"     # HTTP HLS portu
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/my-stream.conf:ro
-      - ./html:/usr/share/nginx/html:ro   # index.html buradan gelecek
+      - ./html:/www/static/:ro   # index.html buradan gelecek
 
