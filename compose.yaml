@@ -6,5 +6,5 @@ services:
       - "1935:1935"   # RTMP portu
       - "9090:80"     # HTTP HLS portu
     volumes:
-      - ./html:/www/static/:ro   # index.html buradan gelecek
+      - ./html:/www/static:ro   # index.html buradan gelecek
 
