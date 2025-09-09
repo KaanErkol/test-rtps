@@ -6,6 +6,6 @@ services:
       - "1935:1935"   # RTMP portu
       - "9090:8081"     # HTTP HLS portu
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/my-stream.conf:ro
-      - ./html:/www/static/:ro   # index.html buradan gelecek
+      - ./nginx.conf:/etc/nginx/nginx.conf.template
+      - ./html:/usr/share/nginx/html/:ro   # index.html buradan gelecek
 
